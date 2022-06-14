@@ -1,9 +1,10 @@
-# First, ask the player about their CPU
-cpuModel = str.lower(input("깃 명령어 입력: "))
+print('match ... case\n')
+
+cmd = str.lower(input("깃 명령어 입력: "))
 
 # The match statement evaluates the variable's value
-match cpuModel:
-    case "add":  # We test for different values and print different messages
+match cmd:
+    case "add":
         print("스테이지 영역에 추가")
     case "commit":
         print("깃 저장소에서 버전 관리")
